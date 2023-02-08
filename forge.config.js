@@ -18,17 +18,5 @@ module.exports = {
       name: '@electron-forge/maker-rpm',
       config: {},
     },
-  ],
-  publishers: [
-    {
-      name: '@electron-forge/publisher-github',
-      config: {
-        repository: {
-          owner: 'chrisprimes',
-          name: 'demo-electron-app'
-        },
-        prerelease: true
-      }
-    }
   ]
 };

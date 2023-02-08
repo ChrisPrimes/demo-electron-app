@@ -24,6 +24,6 @@ jobs:
         pwd
         ls -lath "${PWD}/out/make"
     - uses: actions/upload-artifact@v3
-        with:
-          name: package
-          path: out/make
+      with:
+        name: package
+        path: out/make

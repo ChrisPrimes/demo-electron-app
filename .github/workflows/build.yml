@@ -21,5 +21,9 @@ jobs:
       run: npm run make
     - uses: actions/upload-artifact@v3
       with:
-        name: package
-        path: out/make
+        name: packaged-artifacts
+        path: |
+          out/make/*/*/*/*.zip
+          out/make/*/*.exe
+          out/make/*/*.rpm
+          out/make/*/*.deb

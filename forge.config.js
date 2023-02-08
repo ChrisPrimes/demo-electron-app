@@ -19,4 +19,16 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'chrisprimes',
+          name: 'demo-electron-app'
+        },
+        draft: true
+      }
+    }
+  ]
 };

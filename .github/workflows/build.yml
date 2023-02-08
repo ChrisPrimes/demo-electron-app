@@ -1,5 +1,8 @@
-name: Build
-on: [push, pull_request]
+name: Release
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -13,6 +16,8 @@ jobs:
       with:
         node-version: 18
     - name: install dependencies
-      run: npm install
+      run: npm ci
     - name: build
-      run: npm run make
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: npm run publish

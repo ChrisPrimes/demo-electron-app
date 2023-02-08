@@ -19,7 +19,11 @@ jobs:
       run: npm ci
     - name: build and package app
       run: npm run make
+    - name: Show the artifact
+        run: |
+          pwd
+          ls -lath "${PWD}/out/make"
     - uses: actions/upload-artifact@v3
       with:
-        name: my-artifact
-        path: make
+        name: package
+        path: out/make

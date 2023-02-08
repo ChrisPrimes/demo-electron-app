@@ -17,3 +17,9 @@ jobs:
         node-version: 18
     - name: install dependencies
       run: npm ci
+    - name: build and package app
+      run: npm run make
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: make

@@ -10,7 +10,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish"
   },
-  "author": "",
+  "author": "Chris Primes",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.5",

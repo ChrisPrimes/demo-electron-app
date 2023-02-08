@@ -27,7 +27,7 @@ module.exports = {
           owner: 'chrisprimes',
           name: 'demo-electron-app'
         },
-        draft: true
+        prerelease: true
       }
     }
   ]
